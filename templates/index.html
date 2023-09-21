@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" href="{{url_for('static', filename='img/icono_2-removebg-preview.ico')}}">
+    <title>Wids Inc. | Nomina</title>
+
+
+    <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+  <!-- progress barstle -->
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
+  <!-- font wesome stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/styleindex.css') }}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="Logo">
+            <img src="{{url_for('static', filename='img/122.png')}}" alt="">
+        </a>
+
+        <ul class="navbar">
+            <li><a href="" class="active">Inicio</a></li>
+            <li><a href="">Sobre Mi</a></li>
+            <li><a href="">Global Payroll</a></li>
+            <li><a href="">Equipo De Trabajo</a></li>
+            <li><a href="">Contactanos</a></li>
+        </ul>
+
+        <div class="nav-in">
+            <a href="/login" class="btn">Iniciar Sesion</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <div class="pag">
+    <section class="hero_section ">
+        <div class="hero-container container">
+          <div class="hero_detail-box ctn">
+            <h1 class="text1">
+              Bienvenidos 
+              Sistema De Nomina
+            </h1>
+            <p class="text">
+              El mejor sistema de nomina que puede existir el mejor en el mercado e incluso ha trabajado con grandes compañias como GOOGLE, Disney + etc.
+            </p>
+            <div class="hero_btn-continer">
+              <a href="" class="call_to-btn btn_white-border btnr">
+                Leer Mas
+              </a>
+            </div>
+          </div>
+          <div class="hero_img-container">
+            <div>
+              <img src="{{url_for('static', filename='img/undraw_design_notes_re_eklr.svg')}}" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- end header section -->
+  <div class="pag2">
+    <div class="common_style texto7">
+  
+    <!-- about section -->
+    <section class="about_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about_img-container">
+              <img src="{{url_for('static', filename='img/undraw_online_page_re_lhgx.svg')}}" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about_detail-box">
+              <h3>
+                Sobre Mi
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              </p>
+              <div class="">
+                <a href="" class="call_to-btn btn_white-border">
+                  Leer Mas
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- end about section -->
+
+    <!-- admission section -->
+    <section class="admission_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="admission_detail-box">
+              <h3>
+                Global Payroll
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              </p>
+              <div class="">
+                <a href="" class="call_to-btn btn_white-border">
+                  Leer Mas
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="admission_img-container">
+              <img src="{{url_for('static', filename='img/undraw_savings_re_eq4w.svg')}}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  
+
+  </div>
+
+
+  <!-- client section -->
+  <section class="client_section layout_padding">
+    <h2 class="">
+      Equipo De Trabajo
+    </h2>
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="row">
+                      <div class="col-md-3">
+                        <div class="client_img-box">
+                          <img src="{{url_for('static', filename='img/mariofoto.jpg')}}" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="client_detail-box">
+                          <h5>
+                            Mario Bustamante
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-md-3">
+                        <div class="client_img-box">
+                          <img src="{{url_for('static', filename='img/fotomel.jpg')}}" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="client_detail-box">
+                          <h5>
+                            Melany Pertuz
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-md-3">
+                        <div class="client_img-box">
+                          <img src="{{url_for('static', filename='img/crisfoto.jpg')}}" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="client_detail-box">
+                          <h5>
+                            Cristian Morales
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-3">
+                      <div class="client_img-box">
+                        <img src="{{url_for('static', filename='img/fotodylan.jpg')}}" alt="">
+                      </div>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="client_detail-box">
+                        <h5>
+                          Dylan Urueña
+                        </h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                  <div class="col-md-3">
+                    <div class="client_img-box">
+                      <img src="{{url_for('static', filename='img/fototreazy.jpg')}}" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-9">
+                    <div class="client_detail-box">
+                      <h5>
+                        Sheyleen Hernandez
+                      </h5>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                      </p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+            </div>
+          </div>
+     
+    </div>
+  </section>
+
+
+  <!-- end client section -->
+
+
+    <!-- contact section -->
+
+    <section class="contact_section ">
+
+        <div class="container">
+         
+          <div class="row">
+            <div class="col-md-6">
+              <div class="d-flex justify-content-center d-md-block">
+                <h2>
+                  Contactanos
+                </h2>
+              </div>
+              <form action="">
+                <div class="contact_form-container">
+                  <div>
+                    <div>
+                      <input type="text" placeholder="Nombre">
+                    </div>
+                    <div>
+                      <input type="email" placeholder="Correo">
+                    </div>
+                    <div>
+                      <input type="text" placeholder="Numero De Telefono">
+                    </div>
+                    <div class="mt-5">
+                      <input type="text" placeholder="Mensaje">
+                    </div>
+                    <div class="mt-5">
+                      <button type="submit">
+                        Enviar
+                      </button>
+                    </div>
+                  </div>
+    
+                </div>
+    
+              </form>
+            </div>
+            <div class="col-md-6">
+              <div class="contact_img-box">
+                <img src="{{url_for('static', filename='img/undraw_contact_us_re_4qqt.svg')}}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end contact section -->
+      <section class="info_section layout_padding-top">
+        <div class="info_logo-box">
+          <h2>
+              WIRDS INC.
+          </h2>
+        </div>
+          <div class="container layout_padding2">
+            <div class="row">
+              <div class="col-md-3 texto00">
+                <h5>
+                    Sobre Nosotros.                                                                            
+                </h5>
+               <p>
+                  dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quisdotempor incididunt r 
+               </p>
+              </div>
+              <div class="col-md-3 texto00">
+                <h5>
+                    Links.
+                </h5>
+                <ul>
+                  <li>
+                    <a href="">
+                        Video games
+                    </a>
+                  </li>
+                  <li>
+                   <a href="">
+                      Remote control
+                   </a>
+                  </li>
+                  <li>
+                    <a href="">
+                        3d controller
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 texto00">
+                <h5>
+                    Contactanos.
+                </h5>
+                <p>
+                    dolor sit amet, consectetur magna aliqua. quisdotempor incididunt ut e 
+                </p>
+              </div>
+              <div class="col-md-3 texto00">
+           
+                <div class="subscribe_container">
+                  <h5>
+                    Boletin Info.
+                  </h5>
+                  <div class="form_container">
+                    <form action="">
+                      <input type="email" placeholder="Enter your email">
+                      <button type="submit">
+                        Subscribe
+                      </button>
+                    </form>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="container">
+              <div class="social_container">
+                 
+                  <div class="social-box">
+                    <a href="">
+                      <img src="images/fb.png" alt="">
+                    </a>
+      
+                    <a href="">
+                      <img src="images/twitter.png" alt="">
+                    </a>
+                    <a href="">
+                      <img src="images/linkedin.png" alt="">
+                    </a>
+                    <a href="">
+                      <img src="images/instagram.png" alt="">
+                    </a>
+                  </div>
+                </div>
+          </div>
+        </section>
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      Copyright &copy; 2023 All Rights Reserved By
+      <a href="https://html.design/">WIRDS INC.</a>
+    </p>
+  </section>
+</div></div>
+    
+    <!-- footer section -->
+  
+
+
+    <script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.4.1.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.js')}}"></script>
+  
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/43832854.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+
+    <script src="{{url_for('static', filename='js/app.js')}}"></script>
+</body>

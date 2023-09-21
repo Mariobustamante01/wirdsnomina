@@ -1,0 +1,24 @@
+{% extends 'panel.html' %}
+{% block body %}
+        <div class="col-md-4 offset-md-4" novalidate>
+            <div class="card card-body">
+                <form class = "needs-validation" action="/add_user" method="POST" >
+                    <div class="mb-3 form-group">
+                        <input type="text" name ="names"     placeholder="Nombres"   class="form-control" required>
+                    </div>
+                    <div class="mb-3 form-group">
+                        <input type="text" name ="apellidos" placeholder="Apellidos" class="form-control" required>
+                    </div>
+                    <div class="mb-3 form-group">
+                        <input type="text" name ="usuario"    placeholder="User" class="form-control" required>
+                    </div>
+                    <div class="mb-5 form-group">
+                        <input type="text" name ="contraseña"    placeholder="Password" class="form-control" required>
+                    </div>
+                    <div class="mb-3 form-group d-grid gap-2">
+                        <button type="submit" class="btn btn-primary" > Guardar </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+{% endblock %}

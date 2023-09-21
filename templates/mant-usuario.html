@@ -1,0 +1,66 @@
+{% extends 'panel.html' %}
+{% block body %}
+{% with mensajes = get_flashed_messages() %}
+{% if mensajes %}
+{% for mensaje in mensajes %}
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{mensaje}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+{% endfor %}
+{% endif %}
+{% endwith %}
+<div class="contendor1">
+    <div class="contenido1">
+        <div class="row">
+            <div class="mb-3">
+                <table class="table-sm table-striped">
+                    <thead>
+                        <tr>
+                            <td><label class="full custom-bootstrap-label texto" for="">Usuarios :</label></td>
+                            <td>
+                                <a href="{{ url_for('page_user') }}" class="ful-user btn btn-block btn-outline-primary text-white border-white">Agregar <i class="fas fa-plus"></i></a>
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-ml-6">
+                <table class="fln table table-striped table-bordered bg.bg-white table-sm table-responsive tbu">
+                    <thead>
+                        <tr>
+                            <td>Nombres</td>
+                            <td>Apellidos</td>
+                            <td>Usuario</td>
+                            <td>Contraseña</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for usuario in usuarios %}
+                        <tr>
+                            <td>{{ usuario.1}}</td>
+                            <td>{{ usuario.2}}</td>
+                            <td>{{ usuario.3}}</td>
+                            <td>{{ usuario.4}}</td>
+                            <td>
+                                <div class="btns-user">
+                                    <a href="/editar_/{{usuario.0}}" class="btn btncss">Editar<ion-icon name="create-outline"></ion-icon></a>
+                                    <a href="/delete_/{{usuario.0}}" class="btn btncsse btn-delete">Eliminar<ion-icon name="trash-outline"></ion-icon></a>
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@700&family=Kodchasan:wght@200;300;400;500;600;700&family=Luckiest+Guy&display=swap');
+
+
+
+.contedor{
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    width: 1000px;
+}
+
+.contedor1{
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    width: 1000px;
+    margin-left: 100%;
+}
+
+.contenido{
+    background-color: #fff;
+    padding: 10px;
+    width: 1595px;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.texto{
+    font-size: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.mayus{
+    text-transform: uppercase;
+}
+
+.botonag{
+    margin-left: 1200px;
+    background-color: #72A2C0;
+    color: #fff;
+    border-radius: 1rem;
+}
+
+.botonag:hover{
+    background-color: #A9D9F9;
+}
+
+.caja{
+    border-radius: 1rem;
+}
+
+.btncss{
+    background-color: #72A2C0;
+    border-radius: 1rem;
+    color: #fff;
+}
+
+.btncss:hover{
+    background-color: #A9D9F9;
+}
+
+.btncsse{
+    background-color: #ee3a1f;
+    border-radius: 1rem;
+    color: #fff;
+}
+
+.btncsse:hover{
+    background-color: #f69973;
+}
+
+.tbl{
+    width: 1580px;
+}
+
+.tbu{
+    width: 1100px;
+}
+
+.contenido1{
+    background-color: #fff;
+    padding: 10px;
+    width: 1120px;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.formtb{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.formtb label{
+margin-right: 5px;
+margin-left: 10px;
+display: flex;
+display: inline-flex;
+}
+
+
+
+.formtb  select,input{
+    border: 10px;
+    border-color: #000;
+    margin: 1px;
+    display: flex;
+    border-radius: 5px;
+    background-color: #ddeefaa6;
+    height: 30px;
+}
+
+.btng{
+    background-color: #72A2C0;
+    border-radius: 1rem;
+    margin-left: 250px;
+}
+.btng:hover{
+    background-color: #A9D9F9;
+}
+
+.flexible{
+    display: flex;
+    padding: 40px;
+    padding-top: 10px;
+}
+
+.contenido2{
+    background-color: #fff;
+    padding: 10px;
+    width: 650px;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,47 @@
+body{
+    background-image: linear-gradient(to top, #A9D9F9 0%, #6090AD 100%);
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen al fondo mientras se desplaza el contenido */
+    background-position: center center; /* Alinea la imagen en el centro del fondo */
+    color: white;
+}
+
+.custom-bootstrap-label {
+    font-size: 1.2rem; /* Tamaño de letra más grande */
+    color: white;      /* Color de texto blanco */
+    /* Otros estilos que desees agregar */
+}
+
+.full{
+    margin-right: 790px;
+}
+.ful{
+    justify-items: center;
+    margin: 1px;
+    margin-left: 100px;
+    align-items: center;
+}
+.navbar {
+    height: 80px; /* Cambia este valor según tus necesidades */
+}
+.btns{
+    margin-right: 0px;
+}
+/*Estilos Encargado de la page Nominas*/
+.btns-nomina{
+    margin-right: -55px;
+}
+
+
+
+/*Estilos Encargado de la page Usuarios*/
+.btns-user{
+    margin-right: -160px;
+}
+.ful-user{
+    justify-items: center;
+    margin: 1px;
+    margin-left: 135px;
+    align-items: center;
+}

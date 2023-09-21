@@ -1,0 +1,49 @@
+{% extends 'panel.html' %}
+{% block body %}
+<div class="col-md-4 offset-md-4">
+    <div class="card card-body">
+        <form action="/update_/{{nomina.0}}" method="POST" >
+            <div class="mb-3 form-group">
+                <input type="text" name="num_doc"     placeholder="Numero de Documento" value="{{nomina.1}}"  class="form-control" required>
+            </div>
+            <div class="mb-3 form-group">
+                <input type="text" name="tipo_doc"     placeholder="Tipo De Documento" value="{{nomina.2}}"   class="form-control" required>
+            </div>
+            <div class="mb-3 form-group">
+                <input type="text" name="names"     placeholder="Nombres" value="{{nomina.3}}" class="form-control" required>
+            </div>
+            <div class="mb-3 form-group">
+                <input type="text" name="apellidos" placeholder="Apellidos" value="{{nomina.4}}" class="
+                form-control" required>
+            </div>
+            <div class="mb-3 form-group">
+                <input type="date" name="f_ingreso"  placeholder=""    value="{{nomina.5}}"class="form-control" required>
+            </div>
+            <div class="mb-3 form-group">
+                <input type="text" name="cargo"  placeholder="Cargo" value="{{nomina.6}}" class="form-control" required>
+            </div>
+            <div class="mb-3 form-group">
+                <input type="text" name="salario"    placeholder="Salario" value="{{nomina.7}}" class="form-control" required>
+            </div>
+            <div class="mb-3 form-group">
+                <input type="number" name="sueldoneto"    placeholder="Suledo Neto" value="{{nomina.8}}" class="form-control" required>
+            </div>
+            <div class="mb-3 form-group">
+                <input type="number" name="horas_extras"    placeholder="Horas Extras" value="{{nomina.9}}" class="form-control" required>
+            </div>
+            <div class="mb-3 form-group">
+                <input type="number" name="precio_horas_extras"    placeholder="Precio de horas Extras" value="{{nomina.10}}" class="form-control" required>
+            </div>
+            <div class="mb-3 form-group">
+                <input type="number" name="pago_horas_extras"    placeholder="Pago de Horas Extras" value="{{nomina.11}}" class="form-control" required>
+            </div>
+            <div class="mb-5 form-group">
+                <input type="date" name="fecha_creacion"    placeholder="Fecha de Creacion" value="{{nomina.12}}" class="form-control" required>
+            </div>
+            <div class="mb-3 form-group d-grid gap-2">
+                <button type="submit" class="btn btn-success btn-block"> Guardar </button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

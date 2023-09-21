@@ -1,0 +1,78 @@
+{% extends 'panel.html' %}
+{% block body %}
+{% with mensajes = get_flashed_messages() %}
+{% if mensajes %}
+{% for mensaje in mensajes %}
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{mensaje}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+{% endfor %}
+{% endif %}
+{% endwith %}
+<div class="contendor">
+    <div class="contenido">
+        <div class="row">
+            <div class="mb-2">
+                <table class="table-sm table-striped">
+                    <thead>
+                        <tr>
+                            <td><label class="full custom-bootstrap-label texto" for="">Trabajadores :</label></td>
+                            <td>
+                                <a href="{{ url_for('otra_pagina') }}" class="ful btn btn-block botonag">Agregar <i class="fas fa-plus"></i></a>
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        
+            <div class="row">
+                <div class="col-ml-6">
+                    <table class="fln table table-striped table-bordered bg.bg-white table-sm table-responsive">
+                        <thead>
+                            <tr>
+                                <td>Cedula</td>
+                                <td>Tipo</td>
+                                <td>Nombres</td>
+                                <td>Apellidos</td>
+                                <td>Telefono</td>
+                                <td>Direccion</td>
+                                <td>Fecha Ingreso</td>
+                                <td>Cargo</td>
+                                <td>Departamento</td>
+                                <td>Salario</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for empleado in empleados %}
+                            <tr>
+                                <td>{{ empleado.1}}</td>
+                                <td class="mayus">{{ empleado.2}}</td>
+                                <td>{{ empleado.3}}</td>
+                                <td>{{ empleado.4}}</td>
+                                <td>{{ empleado.5}}</td>
+                                <td>{{ empleado.6}}</td>
+                                <td>{{ empleado.7}}</td>
+                                <td>{{ empleado.8}}</td>
+                                <td>{{ empleado.9}}</td>
+                                <td>{{ empleado.10}}</td>
+                                <td>
+                                    <div class="btns">
+                                        <a href="/edit/{{empleado.0}}" class="btn btncss">Editar<ion-icon name="create-outline"></ion-icon></a>
+                                        <a href="/delete/{{empleado.0}}" onclick="Alerteliminar();" class="btn  btn-delete btncsse">Eliminar<ion-icon name="trash-outline"></ion-icon></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+</div>
+
+{% endblock %}

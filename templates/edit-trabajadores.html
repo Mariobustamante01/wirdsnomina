@@ -1,0 +1,45 @@
+{% extends 'panel.html' %}
+{% block body %}
+    
+    <div class="col-md-4 offset-md-4">
+        <div class="card card-body">
+            <form action="/update/{{empleado.0}}" method="POST" >
+                <div class="mb-3 form-group">
+                    <input type="text" name="num_doc"     placeholder="Numero de Documento" value="{{empleado.1}}"  class="form-control" required>
+                </div>
+                <div class="mb-3 form-group">
+                    <input type="text" name="tipo_doc"     placeholder="Tipo De Documento" value="{{empleado.2}}"   class="form-control" required>
+                </div>
+                <div class="mb-3 form-group">
+                    <input type="text" name="names"     placeholder="Nombres" value="{{empleado.3}}" class="form-control" required>
+                </div>
+                <div class="mb-3 form-group">
+                    <input type="text" name="apellidos" placeholder="Apellidos" value="{{empleado.4}}" class="
+                    form-control" required>
+                </div>
+                <div class="mb-3 form-group">
+                    <input type="text" name="telefono"  placeholder="Telefono"    value="{{empleado.5}}"class="form-control" required>
+                </div>
+                <div class="mb-3 form-group">
+                    <input type="text" name="direccion"  placeholder="Direccion" value="{{empleado.6}}" class="form-control" required>
+                </div>
+                <div class="mb-3 form-group">
+                    <input type="date" name="f_ingreso"    placeholder="Fecha Ingreso" value="{{empleado.7}}" class="form-control" required>
+                </div>
+                <div class="mb-3 form-group">
+                    <input type="text" name="cargo"    placeholder="Cargo" value="{{empleado.8}}" class="form-control" required>
+                </div>
+                <div class="mb-3 form-group">
+                    <input type="text" name="departamento"    placeholder="Departamento" value="{{empleado.9}}" class="form-control" required>
+                </div>
+                <div class="mb-5 form-group">
+                    <input type="number" name="salario"    placeholder="Salario" value="{{empleado.10}}" class="form-control" required>
+                </div>
+                <div class="mb-3 form-group d-grid gap-2">
+                    <button type="submit" class="btn btn-success btn-block"> Guardar </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

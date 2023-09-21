@@ -1,0 +1,68 @@
+{% extends 'panel.html' %}
+{% block body %}
+
+<div class="contendor">
+    <div class="contenido">
+        <div class="row">
+            <div class="mb-3">
+                <table class="table-sm table-striped">
+                    <thead>
+                        <tr>
+                            <td><label class="full custom-bootstrap-label texto" for="">Nominas :</label></td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-ml-6">
+                <table class="fln table table-striped table-bordered bg.bg-white table-sm table-responsive tbl">
+                    <thead>
+                        <tr>
+                            <td>Cedula</td>
+                            <td>Tipo</td>
+                            <td class="apel">Nombres</td>
+                            <td class="apel">Apellidos</td>
+                            <td class="tbhe">Fecha Ingreso</td>
+                            <td>Cargo</td>
+                            <td>Salario</td>
+                            <td class="tbh">Sueldo Neto</td>
+                            <td class="tbh">Horas Extras</td>
+                            <td class="tbho">Precio De hora Extra</td>
+                            <td class="tbho">Pago De Horas Extra</td>
+                            <td class="tbhe">Fecha Creacion</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for nomina in nominas %}
+                        <tr>
+                            <td>{{ nomina.1}}</td>
+                            <td class="mayus">{{ nomina.2}}</td>
+                            <td>{{ nomina.3}}</td>
+                            <td>{{ nomina.4}}</td>
+                            <td>{{ nomina.5}}</td>
+                            <td>{{ nomina.6}}</td>
+                            <td>{{ nomina.7}}</td>
+                            <td>{{ nomina.8}}</td>
+                            <td>{{ nomina.9}}</td>
+                            <td>{{ nomina.10}}</td>
+                            <td>{{ nomina.11}}</td>
+                            <td>{{ nomina.12}}</td>
+                            <td>
+                                <div class="btns-nomina">
+                                    <a href="/editar/{{nomina.0}}" class="btn btncss">Editar<ion-icon name="create-outline"></ion-icon></a>
+                                    <a href="/borrar/{{nomina.0}}" class="btn btncsse btn-delete" onclick="Alertaelimnar();">Eliminar<ion-icon name="trash-outline"></ion-icon></a>
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

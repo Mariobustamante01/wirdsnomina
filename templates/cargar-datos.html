@@ -1,0 +1,47 @@
+{% extends 'panel.html' %}
+{% block body %}
+<div class="contendor">
+    <div class="contenido2">
+        <h1>Cargas Datos:</h1>
+        <hr>
+        <form action="/add_contact" method="POST" class="formtb">
+            <div class="flexible">
+                <div>
+                    <label for="">Nombres</label>
+                    <input type="text" name="names" required>
+                    <label for="">Tipo De Documento</label>
+                    <select name="tipo_doc" id="" required>
+                        <option value="CC">Cedula De Ciudadania</option>
+                        <option value="CE">Cedula Extranjera</option>
+                    </select>
+                    <label for="">Fecha De Ingreso</label>
+                    <input type="date" name="f_ingreso" required>
+                    <label for="">Salario</label>
+                    <input type="number" name="salario" required>
+                </div>
+    
+    
+                <div>
+                    <label for="">Apellidos</label>
+                    <input type="text" name="apellidos" required>
+                    <label for="">Numero De Documento</label>
+                    <input type="text" name="num_doc" required>
+                    <label for="">Cargo</label>
+                    <input type="text" name="cargo" required>
+                </div>
+    
+    
+                <div>
+                    <label for="">Telefono</label>
+                    <input type="text" name="telefono" required>
+                    <label for="">Direccion</label>
+                    <input type="text" name="direccion" required>
+                    <label for="">Departamentos</label>
+                    <input type="text" name="departamento" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btng" > Guardar </button>
+        </form>
+    </div>
+</div>
+{% endblock %}
